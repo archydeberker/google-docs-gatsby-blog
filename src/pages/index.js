@@ -70,3 +70,9 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// const helloWorld = () => {
+//   return <div> Hello world </div>
+// }
+
+// export default helloWorld

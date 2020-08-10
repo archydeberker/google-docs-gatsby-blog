@@ -45,6 +45,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-footnotes`,
         ],
       },
     },
@@ -79,5 +80,9 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-google-docs",
+      options: { folders: ["1B0ah2Yi5suYKK_Kma6K4ezSCiIeEZXGA"] },
+    },
   ],
 }
