@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default ({ data: { post } }) => (
-  <Layout location="test" title="Happier Lives Institute">
-    <h1>{post.document.name}</h1>
+export default ({ data }) => (
+  <Layout location="test" title={data.site.siteMetadata.title}>
+    <h1>{data.post.document.name}</h1>
     {/* <p>{post.document.createdTime}</p> */}
-    <div dangerouslySetInnerHTML={{ __html: post.childMarkdownRemark.html }} />
+    <div
+      dangerouslySetInnerHTML={{ __html: data.post.childMarkdownRemark.html }}
+    />
   </Layout>
 )
 
@@ -18,6 +20,11 @@ export const query = graphql`
       }
       childMarkdownRemark {
         html
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }

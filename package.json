@@ -24,7 +24,6 @@
     "gatsby-remark-responsive-iframe": "^2.4.12",
     "gatsby-remark-smartypants": "^2.3.10",
     "gatsby-source-filesystem": "^2.3.23",
-    "gatsby-source-google-docs": "git+https://github.com/archydeberker/gatsby-source-google-docs.git",
     "gatsby-transformer-remark": "^2.8.28",
     "gatsby-transformer-sharp": "^2.5.12",
     "littlefoot": "^3.4.0",
